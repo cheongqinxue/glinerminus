@@ -1,0 +1,12 @@
+{
+  "architectures": [
+    "GlinerMinusModel"
+  ],
+  "backbone_model_name_or_path": "prajjwal1/bert-mini",
+  "ent_token": "<ent>",
+  "hidden_size": 256,
+  "model_type": "gliner_minus",
+  "num_bilinear_heads": 3,
+  "torch_dtype": "float32",
+  "transformers_version": "4.55.0"
+}
