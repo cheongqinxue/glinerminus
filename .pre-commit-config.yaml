@@ -1,0 +1,39 @@
+# .pre-commit-config.yaml
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0  # Use the latest stable version
+  hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-json
+    - id: debug-statements
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.5.0 # Use the latest stable version tag for Ruff
+  hooks:
+    # 1. Formatting Hook (Auto-Fixes Style)
+    - id: ruff-format
+      name: Python Formatting (Ruff Format)
+
+    # 2. Linting Hook (Checks for Code Smells/Bugs)
+    - id: ruff
+      args: ["--fix"] # Automatically fix simple linting issues
+      name: Python Linting (Ruff Check)
+
+# - repo: local
+#   hooks:
+#     - id: run-unit-tests-via-script
+#       name: Run Pytest Unit Tests (via Script)
+#       entry: bash
+#       language: system
+#       args:
+#         - -c
+#         - |
+#           export PYTHONPATH=$PYTHONPATH:.
+#           pytest
+#       types: [python]
+#       files: ^(src/.*|\.py$|requirements\.txt)$
+#       pass_filenames: false
+#       # additional_dependencies is NOT needed here,
+#       # but 'pytest' must be installed in your active environment!

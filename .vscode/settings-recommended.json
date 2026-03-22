@@ -1,0 +1,22 @@
+{
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.languageServer": "Pylance",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "yaml.format.printWidth": 100,
+    "yaml.format.proseWrap": "always",
+    "yaml.format.singleQuote": true
+}

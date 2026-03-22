@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.mypy",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter",
+        "Postman.postman-for-vscode",
+        "ms-vscode-remote.remote-containers",
+        "charliermarsh.ruff"
+    ]
+}
