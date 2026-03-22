@@ -1,7 +1,7 @@
 {
     "python.defaultInterpreterPath": ".venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "None",
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "[python]": {
         "editor.formatOnSave": true,
